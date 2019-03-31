@@ -1,7 +1,7 @@
 <view class='container'>
-<button type='default'>我参加的活动1</button>
-<button type='default'>我参加的活动2</button>
-<button type='default'>我参加的活动3</button>
+<button type='default'>我最近参加的活动1</button>
+<button type='default'>我最近参加的活动2</button>
+<button type='default'>我最近参加的活动3</button>
 <button type='primary'>查看更多...</button>
 
 </view>
