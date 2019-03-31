@@ -1,1 +1,33 @@
 /* pages/test/test.wxss */
+
+.section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.section__title{
+  background-color: orange;
+}
+
+.flex-wrp{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items:;
+  align-content: center;
+}
+.flex-item{
+  width: 100px;
+  height: 100px;
+}
+.bc_green{
+  background-color: green;
+}
+.bc_blue{
+  background-color: blue;
+}
+.bc_red{
+  background-color: red;
+}
