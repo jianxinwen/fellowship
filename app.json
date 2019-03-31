@@ -1,14 +1,32 @@
 {
   "pages": [
-    "pages/learnlxx/learnlxx",
-    "pages/test/test",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/issue/issue",
+    "pages/myprofile/myprofile",
+    "pages/learnlxx/learnlxx",
+    "pages/myissues/myissues",
+    "pages/issuedetail/issuedetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/issue/issue",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/myprofile/myprofile",
+        "text": "我的"
+      }
+    ]
   }
 }

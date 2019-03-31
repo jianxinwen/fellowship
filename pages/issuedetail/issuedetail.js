@@ -1,4 +1,4 @@
-// pages/test/test.js
+// pages/issuedetail/issuedetail.js
 Page({
 
   /**
@@ -19,7 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.videoCtx = wx.createVideoContext('myVideo')
+
   },
 
   /**
@@ -62,12 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  play() {
-    this.videoCtx.play()
-  },
-  pause() {
-    this.videoCtx.pause()
   }
-
 })
