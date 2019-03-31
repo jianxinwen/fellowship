@@ -1,2 +1,6 @@
-<!--pages/myprofile/myprofile.wxml-->
-<text>pages/myprofile/myprofile.wxml</text>
+<view class='container'>
+  <button bindtap='activityList'>我参加的</button>
+  <button bindtap='issueList'>我发布的</button>
+  <button bindtap='personalInfo'>个人信息</button>
+  <button bindtap='setting'>设置</button>
+</view>

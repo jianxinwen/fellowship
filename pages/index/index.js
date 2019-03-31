@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
 
   },
 
@@ -12,34 +13,45 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log("onLoad")
+    wx.getUserInfo({
+      success:function(res){
+        console.log(res)
+      },
+      fail:function(err){
+        console.log(err)
+      }
+    
 
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    console.log("onReady")
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log("onShow")
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    console.log("onHide")
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    console.log("onUnload")
   },
 
   /**
@@ -61,6 +73,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  bindGetUserInfo(e) {
+    console.log(e.detail.userInfo)
   }
 
 })

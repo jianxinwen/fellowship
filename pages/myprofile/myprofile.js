@@ -62,5 +62,40 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  activityList:function(){
+
+  },
+  issueList:function(){
+    
+  },
+  personalInfo:function(){
+    wx.request({
+      url: 'http://localhost/fellowship/getpersonalinfo/',
+      method:'POST',
+      header:{
+        'content-type': 'application/json'
+      },
+      data:{
+
+      },
+      success:function(res){
+        console.log(res.statusCode)
+        console.log(res.data)
+        console.log(res.header)
+      },
+      fail:function(error){
+
+      },
+      complete:function(){
+
+      }
+
+
+    })
+  },
+  setting:function(){
+
   }
+
 })
